@@ -1,2 +1,3 @@
 # startup
-Made some changes
+Made some changes in vscode
+Made some changes in github
