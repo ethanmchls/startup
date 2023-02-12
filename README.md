@@ -12,3 +12,6 @@ I'm trying to learn how to do all my styling in CSS and treat HTML as more of a 
 
 ### Flex:
 Flex components are pretty straightforward, but in my experience, they're easy to mess up. The basic thing to remember is the `@media screen and (max-width: 600px)` and `flex: 1 20%;` or whatever numbers you need to use for it.
+
+## Simon CSS:
+This assignment was more enjoyable than the HTML project because I felt like I could make it a bit more my own. Where HTML is mostly the structure, it was hard to make the first assignment submission unique, but I made this one a bit more unique to me with CSS and various bootstrap components and custom colors.
