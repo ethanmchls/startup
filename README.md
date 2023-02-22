@@ -18,5 +18,25 @@ I'm trying to learn how to do all my styling in CSS and treat HTML as more of a 
 ### Flex:
 Flex components are pretty straightforward, but in my experience, they're easy to mess up. The basic thing to remember is the `@media screen and (max-width: 600px)` and `flex: 1 20%;` or whatever numbers you need to use for it.
 
-## Simon CSS:
+# Simon CSS:
 This assignment was more enjoyable than the HTML project because I felt like I could make it a bit more my own. Where HTML is mostly the structure, it was hard to make the first assignment submission unique, but I made this one a bit more unique to me with CSS and various bootstrap components and custom colors.
+
+# Simon JS:
+This ended up being much more complex than I originally anticipated. I had some different ideas to accomplish the game functionality, but I prefer the way the code works that we were provided.
+
+## Important things to remember:
+Constructors: prepend attribute declaration with `this.`. If you intend to always use the constructor, there's no need to declare the variables elsewhere. 
+
+`??` to check whether left value is not null, else return right value.
+
+`Audio` class to play audio files.
+
+```
+setTimeout(() => {
+  resolve(true);
+}, milliseconds);
+```
+simple way to add delay.
+
+`document.querySelectorAll('.id').forEach((el, i) => {...}` syntax to query all elements matching `id`. querySelector() only returns a single element.
+
