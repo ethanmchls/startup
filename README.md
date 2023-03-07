@@ -11,6 +11,23 @@ Overall this project wasn't too hard, I think the challenge will be when we star
 This is an ambitious project, but we're making it work. There have been some unique challenges with responsiveness and scaling, but most of it has been manageable. The biggest challenge we had was making a grid that maintained a square aspect ratio. That was probably the single hardest piece to program. This is going to be a big project. We split the work pretty evenly, but it was still a lot of work for each of us.
 
 
+# startup JavaScript
+Most of our JavaScript in this project has been DOM stuff. Aside from that, we had to code the logic that checks whether or not a cell has a building, calling endpoints when a building is built/destroyed, and templating arrays of data into HTML components. One challenge has been working around the order at which you append children to a component. There are ways to prepend children, but they're not all that straightforward, so we've just had to change a couple UI things to work easily.
+
+### Things to remember:
+Best way to create an onclick: `element.onclick = () => { //functionality }`.
+
+Use `textContent` instead of `innerText`.
+
+General syntax for creating and appending a child:
+```
+let div1 = document.getElementById('myDiv');
+let div2 = document.createElement('div');
+div2.setAttribute('class', 'justify-end justify-items-end flex'); //set some class attributes
+div2.textContent = 'Some text to go in the div';
+div1.appendChild(div2);
+```
+
 
 ## CSS practice:
 I'm trying to learn how to do all my styling in CSS and treat HTML as more of a skeleton. It's hard when doing stuff from the ground up, but it makes more sense with practice.
