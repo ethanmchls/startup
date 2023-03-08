@@ -35,6 +35,14 @@ I'm trying to learn how to do all my styling in CSS and treat HTML as more of a 
 ### Flex:
 Flex components are pretty straightforward, but in my experience, they're easy to mess up. The basic thing to remember is the `@media screen and (max-width: 600px)` and `flex: 1 20%;` or whatever numbers you need to use for it.
 
+### Things to remember:
+@import to pull fonts from other sources.
+
+## JavaScript:
+Promises are asynchronous, and the content of the promise (including .then and .finally) will not run until after it resolves. The order after it resolves is content of promise function -> then (-> catch if error) (-> finally if no error).
+
+`filter` maps a value to a function. IE `a.filter(v => v.match(/A|f/i);` matches all strings in an array "a" containing a or i (case insensitive) and places them in a new array.
+
 # Simon CSS:
 This assignment was more enjoyable than the HTML project because I felt like I could make it a bit more my own. Where HTML is mostly the structure, it was hard to make the first assignment submission unique, but I made this one a bit more unique to me with CSS and various bootstrap components and custom colors.
 
