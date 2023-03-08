@@ -12,10 +12,12 @@ This is an ambitious project, but we're making it work. There have been some uni
 
 
 # startup JavaScript
-Most of our JavaScript in this project has been DOM stuff. Aside from that, we had to code the logic that checks whether or not a cell has a building, calling endpoints when a building is built/destroyed, and templating arrays of data into HTML components. One challenge has been working around the order at which you append children to a component. There are ways to prepend children, but they're not all that straightforward, so we've just had to change a couple UI things to work easily.
+Most of our JavaScript in this project has been DOM stuff. Aside from that, we had to code the logic that checks whether or not a cell has a building, calling endpoints when a building is built/destroyed, and templating arrays of data into HTML components. One challenge has been working around the order at which you append children to a component. We also had to get pretty clever with how we created and modified the onclick for a cell when a building is built/destroyed.
+
+We created a lot of backend endpoints with dummy data. We would have exclusively done dummy data in JavaScript, but it would have just been more work later on when we start heavily programming the backend.
 
 ### Things to remember:
-Best way to create an onclick: `element.onclick = () => { //functionality }`.
+Best way to create an onclick in most cases: `element.onclick = () => { //functionality }`. For one instance, we had to put a separate function call into the body of the onclick's anonymous function because I needed to pass in a parameter to the function being run by the onclick.
 
 Use `textContent` instead of `innerText`.
 
