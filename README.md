@@ -69,3 +69,6 @@ simple way to add delay.
 
 # Simon service
 Setting up an express service script isn't too hard to set up. But it is difficult to set up in a dev environment because it struggles to use the correct port. I eventually tested some curl commands and realized I had it working even though it wasn't working in the web UI because the web UI was running on port 5500, but the express APIs were only available on port 3000. I just deployed the web page and it worked. So I've still gotta figure out how to make it work with the VS code live server extension.
+
+# Simon DB
+I thought this would be easier than it was after the mongodb assignment. It was really hard to test it because with vscode's live server plugin, there were conflicting ports, so I couldn't successfully test the database calls. So it ended up requiring me to deploy the app several times until I solved the issues. This milestone is starting to bring the entire project into view. It's cool to get every piece, UI, JavaScript, services, and the database all working together.
