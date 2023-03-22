@@ -75,3 +75,6 @@ I thought this would be easier than it was after the mongodb assignment. It was 
 
 # Simon login
 This project is starting to get pretty involved. This one was a little trickier with some of the dependencies. I still don't know how to test the entire application with vscode live server without deploying because of the conflicting ports. But I eventually figured it out.
+
+# Simon websocket
+This was a cool milestone. It was a bit difficult to test this one, but it's cool to see user interaction from other user sessions. It's nice how much easier it can be when there is already an available JS library you can use like WebSocketServer for a webpage like this.
