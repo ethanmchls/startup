@@ -78,3 +78,7 @@ This project is starting to get pretty involved. This one was a little trickier 
 
 # Simon websocket
 This was a cool milestone. It was a bit difficult to test this one, but it's cool to see user interaction from other user sessions. It's nice how much easier it can be when there is already an available JS library you can use like WebSocketServer for a webpage like this.
+
+
+# Startup service
+This one was a doozie. It was understandably a lot of work, because we needed to make the game actually function. I learned a lot about setting up endpoints in vapor and accessing our database with fluent. We changed our approach to saving user data to the database. We were originally going to create models and save objects to the database as JSON objects, but what we ended up doing instead is we created a few giant JSON files that include all the buildings and techs. Then when we are pulling data for a user's buildings and researched techs, all it does is grab a list of strings or ints from the database that correlate to the buildings and techs available to the user. There's a tradeoff here. It adds more computation and api calls, but it makes the database calls way less expensive. The other big-picture things that are noteworthy are we had to think through which endpoints we wanted so that we could reuse some endpoints for multiple purposes. We also ended up putting a lot of data validation in the frontend which may not be the best practice, but it was simpler, and it also limits how many api calls we have to make.
